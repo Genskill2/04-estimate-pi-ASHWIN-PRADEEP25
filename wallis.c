@@ -24,4 +24,13 @@ int main(void) {
   }
 }
 
-
+float wallis_pi(int n)
+{
+  float temp,value;
+  for(int i=0;i<n;i++)
+  {
+    temp=4*i*i;
+    value*=(int)temp/(temp-1);
+  }
+  return value*2;  
+}
